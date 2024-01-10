@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = "style.css">
+    <link rel="icon" type="image/x-icon" href="https://a-z-animals.com/media/2021/05/iStock-1420676204-1024x680.jpg">
+    <title>Login form</title>
+</head>
+<body>
+    <header>
+        <div class = "logom"><img class ="logo" src="https://static.vecteezy.com/system/resources/previews/001/189/524/original/save-earth-png.png" alt="logo" width = "100px" height = "80px"></div>
+        
+    </header>
+    <section class="main1">
+        <img class="img1" src = "https://th.bing.com/th/id/OIP.BP3alrnCtGMLjEvyV7HBFAHaE7?rs=1&pid=ImgDetMain" alt ="img"  width = '500px' height = "500px" >
+        <div class="center1">
+            <h4 class = "h4">Our Precious Resource</h4>
+            <h1 class = "h1">Water Management and Pollution <br>Control</h1>
+            <p class = "p">Water is essential <abbr>to all life on Earth. Yet, pollution and mis-management have led to water sca</abbr>rcity<br>
+                           and  environment<abbr>al damageWater is our planet's most precious resource,vital for all life. Howev</abbr>er,mi-<br>
+                           smanagement  an<abbr>d pollution threaten its availability.Join us in exploring the critical issues of wa</abbr>ter<br>
+                           scarcity, pollution,<abbr> and sustainable management. Discover how these challenges impact our da</abbr>ily lives<br>
+                            and the environment,<abbr>and find ways to contribute to a healthier, more sustainable world.</abbr> </p>
+            
+                            <div class="btn1">
+                                <button class="btn11" type = "button" onclick="signin()">Login</button>
+                                <button class="btn12" type="button" onclick="signup()">Signup</button>
+                            </div>
+        </div>
+        <!---------------------- login button ----------------------->
+        
+        <section class="form">
+            <button class="into1" onclick="signup1()">&#10006</button>
+            <h3 class="h3">sign up</h3>
+
+            <h1 class ="formh1">New user</h1>
+
+            
+                <form onsubmit="return passwordinstruction()" action="submit.php" method="post">
+
+                <lable for = "firstname"></lable>
+                <input class="formn1" type="text" id="firstname" name="firstname" value="" placeholder="Enter Phone Number or Email id" title="Enter your name" required><br>
+
+                <lable for="password"></lable>
+                <input class="formn2" type="password" id="password" name="password"  placeholder="Enter Password" title="Enter your name" required><br>
+
+                <span id="message" style="width:350px ;margin-top:-20px; color:red; background-color:transparent; text-align:start; margin-left:60px;" ></span>
+
+                <button class="formn3" type="submit" value="sign in">Sign up</button>
+            </form>
+        </section>
+
+
+        <section class="form1">
+            <button class="into1"  onclick="signin1()">&#10006</button>
+            <h3 class="h3">sign in</h3>
+            <h1 class ="formh1">Existing user</h1>
+            <form action ="/action_page.php">
+                <lable for = "firstname"></lable>
+                <input class="formn1" type="text" id="firstname" name="firstname" value="" placeholder="Enter Phone Number or Email id" title="enter your account name" required><br>
+                <lable for="password"></lable>
+                <input class="formn2" type="text" id="password1" name="password" value="" placeholder="Enter Password"  title="please enter your password" required><br>
+                <button class = "forgetp" onclick="forgetp()">forget password</button><br>
+                <button class="formn33" type="">Sign in</button>
+            </form>
+        </section>
+       
+        <!---------------------------------forget password------------------------------------------>
+        <section class="forgetpasswordf">
+            <button class="into2" onclick="forgetpr()">&#10006</button>
+            <h1>Recover Password</h1>
+            <form onsubmit="return errorfinding()" action="submit.php" method="post">
+            <lable for="phonenumber"></lable>
+            <input type="text" id="phonenumber" name="phonenumber" value="" placeholder="Enter account Phone number or Email" required><br>
+            <span id = "message1" style="color:red; background-color:transparent; width:250px; margin-left:40px; margin-top:-20px; "></span>
+            <lable for="enterotp"></lable>
+            <input  style ="margin-left:50px;" type="text" id="EnterOTP" name="EnterOTP" value="" placeholder="Enter OTP" required>
+            <button class="otp" type="submit" onclick="Enter()">Send OTP</button>
+            </form>
+        </section>        
+        
+    </section>
+    <script  src="varma.js"></script>
+</body>
+</html>
